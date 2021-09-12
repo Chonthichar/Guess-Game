@@ -36,17 +36,16 @@ document.querySelector('.check').addEventListener('click', function () {
             document.querySelector('.score').textContent = 0;
         }
     }
-    document.querySelector('.again').addEventListener('click', function () {
-        secretNumber = Math.round(Math.random() * 10) +1;
-        document.querySelector('.guess').value = ' ';
-        showMessage('Try again');
-        document.querySelector('.number').textContent = '?';
-        document.querySelector('body').style.backgroundColor = '#222';
-        score = 20;
-        document.querySelector('.score').textContent = score;
-    })
 })
-
+document.querySelector('.again').addEventListener('click', function () {
+    secretNumber = Math.round(Math.random() * 10) + 1;
+    document.querySelector('.guess').value = ' ';
+    showMessage('Try again');
+    document.querySelector('.number').textContent = '?';
+    document.querySelector('body').style.backgroundColor = '#222';
+    score = 20;
+    document.querySelector('.score').textContent = score;
+})
 
 
 
