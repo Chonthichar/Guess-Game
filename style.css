@@ -1,0 +1,110 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 60px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    color: #eee;
+    background-color: #222;
+}
+
+header {
+    position: relative;
+    height: 35vh;
+    border-bottom: 7px solid #eee;
+}
+
+main {
+    align-items: center;
+
+}
+
+.left {
+    align-items: center;
+}
+
+.right {
+    width: 52rem;
+    font-size: 2rem;
+}
+
+h1,p {
+    text-align: center;
+}
+
+.number {
+    background: #eee;
+    color: #333;
+    font-size: 80px;
+    padding: 3%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    transform: translate(-50%, 50%);
+}
+
+.between {
+    font-size: 50px;
+    position: absolute;
+    text-align: center;
+    margin-left: 30%;
+
+}
+.again {
+    position: absolute;
+    margin-top: 5%;
+    top: 2rem;
+    left: 2rem;
+    font-size: 60px;
+}
+
+.guess {
+    background: none;
+    border: 4px solid #eee;
+    font-family: inherit;
+    color: inherit;
+    font-size: 40px;
+    padding: 5%;
+    width: 30%;
+    text-align: center;
+    display: block;
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+.btn {
+    border: none;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ccc;
+}
+
+.message {
+    margin-bottom: 0;
+    height: 5%;
+    margin-left: 40%;
+}
+
+.check {
+    font-size: 80px;
+    margin-top: 2%;
+    margin-left: 38%;
+}
+.score .high {
+    margin-bottom: 10px;
+    margin-left: 0;
+    color: whitesmoke;
+}
