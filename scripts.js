@@ -1,7 +1,7 @@
 'use strict';
 
 
-let secretNumber = Math.round(Math.random() * 10) +1;
+let secretNumber = Math.round(Math.random() * 20) + 1;
 let score = 20;
 let high = 0;
 
@@ -38,7 +38,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
 })
 document.querySelector('.again').addEventListener('click', function () {
-    secretNumber = Math.round(Math.random() * 10) + 1;
+    secretNumber = Math.round(Math.random() * 20) + 1;
     document.querySelector('.guess').value = ' ';
     showMessage('Try again');
     document.querySelector('.number').textContent = '?';
@@ -48,6 +48,14 @@ document.querySelector('.again').addEventListener('click', function () {
 })
 
 
+let input = document.querySelector('.guess');
+input.addEventListener('keydown', function (e) {
+  //  console.log('a key wa press');
+  //  console.log(e.key);
 
-
+    if (e.key === "Enter") {
+        event.preventDefault();
+        document.querySelector(".check").click();
+    }
+})
 
